@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN7 | طراحی سایت، اپلیکیشن و سلامت دیجیتال</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- فونت انگلیسی Inter (جایگزین Outfit) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- فونت فارسی وزیرمتن -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- فونت Syne را برای تیترها نگه دار (اختیاری) -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-logo">
+             <img src="images/MN7 _white02.png" alt="لوگو MN7">
+        </div>
+        <!-- <div class="loader-ring"></div> -->
+        <div class="loading-text">درحــال اجــرای کـدهـامـون...</div>
+    </div>
+
+    <!-- Ambient Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <div class="header" id="mainHeader">
+            <div class="logo">
+                <img src="images/MN7_hologram.png" alt="MN7 Logo">
+            </div>
+            <h1 class="brand-name">MN7</h1>
+            <p class="tagline">From Idea to Digital Reality <br> از ایده تا واقعیت دیجیتال </p>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">
+                    <img src="images/icons/document-svgrepo-com.svg" alt="IN">
+                </div>
+                <div class="menu-title">مـعرفـی</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">
+                    <img src="images/icons/service-provider-icon.svg" alt="SR">
+                </div>
+                <div class="menu-title">پــروژه‌هـا</div>
+            </div>
+
+            <!-- <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">GL</div>
+                <div class="menu-title">Gallery</div>
+            </div> -->
+
+            <div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">
+                    <img src="images/icons/picture-svgrepo-com.svg" alt="BLOG">
+                </div>
+                <div class="menu-title">بــلاگ</div>
+            </div>
+
+            <!-- <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">درباره ما</div>
+            </div> -->
+
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">
+                    <img src="images/icons/manager-icon.svg" alt="CALL">
+                </div>
+                <div class="menu-title">ارتباط‌ با نعیم</div>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div id="contentArea">
+            <!-- Introduction Section -->
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>MN7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+                
+                <!-- Hero Banner -->
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        <span class="intro-badge">از ایده تا واقعیت دیجیتال</span>
+                        <h1 class="intro-headline">کسب‌وکارت رو<br><span>دیجیتال</span> می‌کنیم</h1>
+                        <p class="intro-subtext">از طراحی سایت‌های فروشگاهی و رزرواسیون تا راهکارهای سلامت دیجیتال ، 
+همراهت هستیم تا ایده‌ات را به یک تجربه دیجیتال واقعی تبدیل کنیم.</p>
+
+                        <div class="intro-cta-group">
+                            <button class="intro-cta-primary" onclick="navigateToSection('contact')">
+                                شروع همکاری
+                            </button>
+                            <button class="intro-cta-secondary" onclick="navigateToSection('services')">
+                                الان داریم چیکار میکنیم؟
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="intro-hero-visual">
+                        <div class="intro-floating-card card-1">
+                            <span class="card-icon">⚡</span>
+                            <span class="card-text">طراحی سریع و مـدرن</span>
+                        </div>
+                        <div class="intro-floating-card card-2">
+                            <span class="card-icon">🎯</span>
+                            <span class="card-text">دقیق و متناسب با هدفـت</span>
+                        </div>
+                        <div class="intro-floating-card card-3">
+                            <span class="card-icon">🔒</span>
+                            <span class="card-text">امـن و قابل اعتماد</span>
+                        </div>
+                        <div class="intro-orb"></div>
+                    </div>
+                </div>
+
+                <!-- Metrics Strip -->
+                <div class="intro-metrics">
+                    <!-- <div class="metric-item">
+                        <span class="metric-value" data-target="500">0</span>
+                        <span class="metric-label">Projects Delivered</span>
+                    </div> -->
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value" data-target="98">0</span>
+                        <span class="metric-suffix">%</span>
+                        <span class="metric-label">رضایت مشتری</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+
+                        <span class="metric-value">+</span>  <span class="metric-value" data-target="100000">بی نهایت</span>
+                        <span class="metric-label">ایده برای ساخت</span>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-item">
+                        <span class="metric-value">24/7</span>
+                        <span class="metric-label">پشتیبانی جامع</span>
+                    </div>
+                </div>
+
+                <!-- Core Values -->
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>گوش می‌کنیم، بعد می‌سازیم</h3>
+                        <p>ایده‌ات را می‌شنویم، هدف‌هات را می‌فهمیم و بعد دست به کار می‌شیم. 
+چون راهکار درست، از گفت‌وگوی درست شروع میشه...</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>نتیجه‌محور و پیوسته</h3>
+                        <p>طراحی زیبا، فقط شروع ماجراست. ما تا رسیدن به نتیجه واقعی ، 
+فروش بیشتر، دیده شدن، رشد ، کنارت می‌مونیم.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>رشد پایدار</h3>
+                        <p>راهکاری می‌سازیم که با کسب‌وکارت بزرگ بشه. 
+                            قابل گسترش، قابل به‌روزرسانی، آماده برای فردا.</p>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Preview -->
+                <div class="intro-tech">
+                    <p class="tech-label">تــکــنـولـوژی که ما اسـتـفـاده مــی‌کنیم</p>
+                    <div class="tech-marquee">
+                            <div class="tech-track">
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">Next.js</span>
+                                <span class="tech-item">UX/UI</span>
+                                <span class="tech-item">Python</span>
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">AWS</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Section -->
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>MN7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+
+                <div class="section-header">
+                    <h2 class="section-title">خدمات مــا</h2>
+                    <p class="section-subtitle">از ایده تا واقعیت دیجیتال</p>
+                </div>
+
+                <!-- --------------------------------------------- -->
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+
+                        <button class="tab-btn active" onclick="switchTab(this, 'development')">پروژه های فعلی</button>
+
+                        <button class="tab-btn" onclick="switchTab(this, 'design')">خدمات آماده ارائه</button>
+
+                        <!-- <button class="tab-btn" onclick="switchTab(this, 'consulting')">Consulting</button> -->
+                        <!-- <button class="tab-btn" onclick="switchTab(this, 'support')">Support</button> -->
+                    </div>
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="development">
+                            <div class="services-list">
+                                <div class="service-row project-card">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/file_beaty-salon-aynaz.webp" alt="سایت رزرواسیون سالن زیبایی آیناز">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>سایت رزرواسیون سالن زیبایی آیناز</h4>
+                                        <p class="project-location">📍 سالن آرایشی آیناز — کرج</p>
+                                        <p class="project-desc">طراحی سیستم نوبت‌دهی آنلاین، تقویم هوشمند، انتخاب خدمات برای مشتریان.</p>
+
+                                        <!-- مراحل پروژه -->
+
+                                         <!-- برای تغییر مرحله پیشرفت ، به کلاس آن ها توجه کنید... 
+                                          مثلا نوشته step done or in-progress or pending -->
+
+                                        <div class="project-steps">
+                                            <div class="step done">
+                                                <span class="step-dot">✓</span>
+                                                <span class="step-label">طراحی</span>
+                                            </div>
+                                            <div class="step done">
+                                                <span class="step-dot">✓</span>
+                                                <span class="step-label">فرانت‌اند</span>
+                                            </div>
+                                            <div class="step in-progress">
+                                                <span class="step-dot"></span>
+                                                <span class="step-label">بک‌اند</span>
+                                            </div>
+                                            <div class="step pending">
+                                                <span class="step-dot"></span>
+                                                <span class="step-label">تست</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- نوار پیشرفت -->
+                                        <div class="project-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 55%;"></div>
+                                            </div>
+                                            <span class="progress-text">55٪ تکمیل</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+
+
+                                <div class="service-row project-card">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/zirNevis.webp" alt="سایت زیرنویس انگلیسی-فارسی">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>سایت ارائه زیرنویس فارسی-انگلیسی</h4>
+                                        <!-- <p class="project-location">📍 سالن آرایشی آیناز — کرج</p> -->
+                                        <p class="project-desc">ارائه، تدوین و هماهنگی زیرنویس فارسی-انگلیسی برای ویدیوپادکست ها، ویدیو های توسعه فردی و...</p>
+
+                                        <!-- مراحل پروژه -->
+                                         
+                                         <!-- برای تغییر مرحله پیشرفت ، به کلاس آن ها توجه کنید... 
+                                          مثلا نوشته step done or in-progress or pending -->
+
+                                        <div class="project-steps">
+                                            <div class="step done">
+                                                <span class="step-dot">✓</span>
+                                                <span class="step-label">طراحی</span>
+                                            </div>
+                                            <div class="step in-progress">
+                                                <span class="step-dot"></span>
+                                                <span class="step-label">فرانت‌اند</span>
+                                            </div>
+                                            <div class="step pending">
+                                                <span class="step-dot"></span>
+                                                <span class="step-label">بک‌اند</span>
+                                            </div>
+                                            <div class="step pending">
+                                                <span class="step-dot"></span>
+                                                <span class="step-label">تست</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- نوار پیشرفت -->
+                                        <div class="project-progress">
+                                            <div class="progress-bar">
+                                                <div class="progress-fill" style="width: 20%;"></div>
+                                            </div>
+                                            <span class="progress-text">20٪ تکمیل</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+
+                                <!-- <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/coding-screen.jpg" alt="Web Applications">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Web Applications</h4>
+                                        <p>Responsive, scalable web apps built with modern frameworks like React, Vue, and Next.js for optimal performance.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/ai-mobile-app.jpg" alt="Mobile Apps">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Mobile Apps</h4>
+                                        <p>Native and cross-platform mobile solutions for iOS and Android that deliver seamless user experiences.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div> -->
+
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/stockvault-web-designing-represents-internet-website-and-designs221.webp" alt="UX/UI Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>طراحی سایت فروشگاهی و رزرواسیون</h4>
+                                        <p>سایت‌های سریع، امن و بهینه برای موبایل و وب | از فروشگاه اینترنتی و سالن زیبایی تا کلینیک و مطب. </p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/stockvault-medical-technology-medtech-market-healthca650.webp" alt="Brand Identity">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>سلامت دیجیتال</h4>
+                                        <p>راهکارهای فناورانه برای حوزه سلامت | از سیستم‌های اطلاعاتی و پنل‌های مدیریت بیماران تا ابزارهای تعاملی، پرسشنامه‌های هوشمند و تحلیل داده. با رعایت استانداردها و حریم خصوصی.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/shutterstock-121472.webp" alt="Motion Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>راهکارهای دیجیتال هوشمند</h4>
+                                        <p>فقط سایت نیست... از سیستم‌های رزرو آنلاین و پنل‌های مدیریتی تا ابزارهای تحلیل داده. هر ایده‌ای که کسب‌وکارت رو جلو بندازه، با هم می‌سازیمش.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/service-img/stockvault-concept-of-artificial-intelligence-on-abstract-background2870.webp" alt="Motion Design">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>تحلیل داده و هوش تجاری</h4>
+                                        <p>تبدیل داده‌های خام به تصمیم‌های هوشمند | از داشبوردهای تحلیلی و گزارش‌های تعاملی تا پیاده‌سازی با پایتون برای کسب‌وکارهای داده‌محور.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="consulting">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/digital-strategy.jpg" alt="Digital Strategy">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Digital Strategy</h4>
+                                        <p>Strategic planning for digital transformation initiatives that align technology with business objectives.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/tech-audit.jpg" alt="Technology Audit">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Technology Audit</h4>
+                                        <p>Comprehensive assessment of your tech infrastructure to identify opportunities and optimize performance.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/process-optimized.jpg" alt="Process Optimization">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Process Optimization</h4>
+                                        <p>Streamline workflows with automation and best practices for maximum efficiency and productivity.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="support">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/247-support.jpg" alt="24/7 Support">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>24/7 Support</h4>
+                                        <p>Round-the-clock technical assistance and maintenance to keep your systems running smoothly.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/training-center.jpg" alt="Training">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Training & Workshops</h4>
+                                        <p>Empower your team with expert-led training sessions tailored to your technology stack.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/managed-service.jpg" alt="Managed Services">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Managed Services</h4>
+                                        <p>End-to-end management of your digital infrastructure for worry-free operations.</p>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Section -->
+            <!-- <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>M.N.7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Portfolio</h2>
+                    <p class="section-subtitle">Explore our latest works</p>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                    <button class="filter-btn" onclick="filterGallery('web', this)">Web</button>
+                    <button class="filter-btn" onclick="filterGallery('mobile', this)">Mobile</button>
+                    <button class="filter-btn" onclick="filterGallery('branding', this)">Branding</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/coding-screen.jpg" alt="Project 1">
+                        <div class="gallery-overlay">
+                            <h4>E-Commerce Platform</h4>
+                            <p>Web Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-mobile-app.jpg" alt="Project 2">
+                        <div class="gallery-overlay">
+                            <h4>Fitness App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/brand-identity.jpg" alt="Project 3">
+                        <div class="gallery-overlay">
+                            <h4>Brand Identity</h4>
+                            <p>Design & Branding</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/managed-service.jpg" alt="Project 4">
+                        <div class="gallery-overlay">
+                            <h4>Analytics Dashboard</h4>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/ai-optimized-templates.jpg" alt="Project 5">
+                        <div class="gallery-overlay">
+                            <h4>Banking App</h4>
+                            <p>Mobile Development</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/digital-strategy.jpg" alt="Project 6">
+                        <div class="gallery-overlay">
+                            <h4>Startup Branding</h4>
+                            <p>Design & Identity</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- Testimonials Section -->
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>M.N.7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+
+                <div class="section-header">
+                    <h2 class="section-title">بــــــلاگ</h2>
+                    <p class="section-subtitle">What our clients say about us</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Working with M.N.7 transformed our digital presence. Their innovative approach and attention to detail exceeded our expectations at every turn.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop" alt="Client 1">
+                            </div>
+                            <div class="author-info">
+                                <h5>Michael Chen</h5>
+                                <p>CEO, TechVentures</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The team's expertise in UX design helped us create an app that our users absolutely love. Our engagement metrics have increased by 200%.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Client 2">
+                            </div>
+                            <div class="author-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>Product Director, InnovateCo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">From strategy to execution, M.N.7 delivered exceptional results. Their commitment to quality is unmatched in the industry.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop" alt="Client 3">
+                            </div>
+                            <div class="author-info">
+                                <h5>David Park</h5>
+                                <p>Founder, StartupHub</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">The AI solutions they built for us have revolutionized our operations. We've seen a 40% increase in efficiency since implementation.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Client 4">
+                            </div>
+                            <div class="author-info">
+                                <h5>Emily Zhang</h5>
+                                <p>COO, DataFlow Inc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- About Section -->
+            <!-- <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>M.N.7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Our story, mission, and values</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Pioneering Digital Innovation</h3>
+                        <p>Founded in 2020, NexaVerse has grown from a small team of passionate developers into a leading digital agency. We believe in pushing boundaries and creating solutions that make a real difference.</p>
+                        <p>Our diverse team brings together expertise from design, development, AI, and strategy to deliver holistic solutions that drive business growth and user engagement.</p>
+                        <p>We're not just building products – we're shaping the future of digital experiences.</p>
+                        <p>Discover AI-optimized web templates from <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a>. Maximize efficiency with the timer platform at <a href="https://timermo.com" rel="nofollow" target="_blank">TimerMo</a>. Design like a pro using vector stickers from <a href="https://www.vectorsticker.com" rel="nofollow" target="_blank">VectorSticker</a>.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/about-our-team.jpg" alt="Our Team">
+                    </div>
+                </div>
+            </div> -->
+
+
+
+            <!-- Contact Section -->
+
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                        <img src="images/MN7_hologram.png" alt="لوگو MN7">
+                    </div>
+                    <div class="small-brand">
+                        <h3>M.N.7</h3>
+                        <p>Digital Excellence</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">برگشت به منو ← </button>
+
+                <div class="section-header">
+                    <h2 class="section-title">ارتباط با نعیم</h2>
+                    <p class="section-subtitle">بیا درباره ایده‌ات حرف بزنیم</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- ستون چپ: فرم -->
+                    <div class="contact-form">
+                        <p class="contact-welcome">
+                            سلام! اگه ایده‌ای برای پروژه‌ات داری یا سؤالی داری، 
+                            خوشحال می‌شم پیامت رو بخونم. معمولاً ظرف ۲۴ ساعت پاسخ می‌دم.
+                        </p>
+
+                        <form action="https://formsubmit.co/mn.naeim7@gmail.com" method="POST">
+                            <!-- تنظیمات اختیاری -->
+                            <input type="hidden" name="_subject" value="پیام جدید از سایت MN7">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_autoresponse" value="سلام! پیامتون رو دریافت کردم. به‌زودی پاسخ پیامتون رو میدم. — نعیم از MN7">
+                            
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="اسمتون چیه؟" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="ایمیلتون چیه؟" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="موضوع پیام">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="پیامتون رو بنویسید..." required></textarea>
+                            </div>
+                            <button type="button" class="submit-btn" onclick="showSendError()">ارسال پیام</button>
+                        </form>
+                    </div>
+
+                    <!-- ستون راست: راه‌های ارتباطی -->
+                    <div class="contact-info">
+                        <p class="contact-info-title">راه‌های ارتباطی</p>
+
+                        <!-- تلگرام -->
+                        <a href="https://t.me/MNaeim7" target="_blank" class="contact-item">
+                            <div class="contact-icon telegram-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>تلگرام</h4>
+                                <p>@MNaeim7</p>
+                                <span class="contact-hint">سریع‌ترین راه ارتباط</span>
+                            </div>
+                        </a>
+
+                        <!-- ایمیل -->
+                        <a href="mailto:mn.naeim7@gmail.com" class="contact-item">
+                            <div class="contact-icon email-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>ایمیل</h4>
+                                <p>mn.naeim7@gmail.com</p>
+                                <span class="contact-hint">برای همکاری‌های رسمی</span>
+                            </div>
+                        </a>
+
+                        <!-- واتساپ (اختیاری) -->
+                        <!-- <a href="https://wa.me/98xxxxxxxxxx" target="_blank" class="contact-item">
+                            <div class="contact-icon whatsapp-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>واتساپ</h4>
+                                <p>پیام مستقیم</p>
+                                <span class="contact-hint">برای ارتباط سریع</span>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer" id="mainFooter">
+            <p>© 2026 Design by <a href="#" target="_blank">MN7 | M.Naeim </a></p>
+        </footer>
+    </div>
+
+    <!-- Coming Soon Modal -->
+    <div class="coming-soon-modal" id="comingSoonModal">
+        <div class="coming-soon-content">
+            <div class="coming-soon-icon">🚧</div>
+            <h3>به‌زودی...</h3>
+            <p>این بخش در حال ساخت است. به‌زودی مطالب جذابی اینجا خواهید دید.</p>
+            <button class="coming-soon-close" onclick="closeComingSoon()">باشه، منتظرم</button>
+        </div>
+    </div>
+
+<script src="templatemo-nexa-scripts.js"></script>
+</body>
+</html>
