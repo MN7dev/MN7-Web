@@ -40,6 +40,9 @@ menuItems.forEach(item => {
 function showSection(sectionId) {
    isTransitioning = true;
 
+   // ← این خط جدید: اضافه کردن state به history مرورگر
+   history.pushState({ section: sectionId }, '', '#' + sectionId);
+
    // First, ensure all menu items are in visible state before transitioning
    menuItems.forEach((item) => {
       // Remove initial-load class
@@ -102,9 +105,20 @@ function showSection(sectionId) {
    }, 550);
 }
 
-function backToMenu() {
+function backToMenu(fromPopstate = false) {
    if (isTransitioning) return;
    isTransitioning = true;
+
+   // اگه از back مرورگر اومده، replace کن. وگرنه push کن.
+   if (fromPopstate) {
+      history.replaceState({ section: null }, '', '#main');
+   } else {
+      history.pushState({ section: null }, '', '#main');
+   }
+
+   // ← این خط جدید: پاک کردن hash از URL
+   history.pushState({ section: null }, '', '#main');
+
 
    const activeSection = document.querySelector('.content-section.active');
    if (activeSection) {
@@ -388,3 +402,55 @@ function showErrorToast(message) {
         setTimeout(() => toast.remove(), 400);
     }, 6000);
 }
+
+// ===== مدیریت دکمه Back مرورگر =====
+window.addEventListener('popstate', (event) => {
+   const activeSection = document.querySelector('.content-section.active');
+   const hash = window.location.hash.replace('#', '');
+
+   // اگه سکشن فعال داریم و hash جدید خالی یا #main هست → برگرد به منو
+   if (activeSection && (!hash || hash === 'main')) {
+   if (isTransitioning) {
+      setTimeout(() => backToMenu(true), 600);  // ← true پاس بده
+   } else {
+      backToMenu(true);
+   }
+   return;
+}
+
+   // اگه hash یه سکشن معتبر بود → اون سکشن رو باز کن
+   if (hash && hash !== 'main') {
+      const targetSection = document.getElementById(hash);
+      if (targetSection) {
+         if (activeSection) {
+            activeSection.classList.remove('active');
+         }
+         showSection(hash);
+      }
+   }
+   // اگه توی منو هستیم و back زده شد → کاری نکن (یا می‌تونی رفتار دلخواه بدی)
+});
+
+// ===== پشتیبانی از لود مستقیم با hash =====
+window.addEventListener('DOMContentLoaded', () => {
+   const hash = window.location.hash.replace('#', '');
+
+   // لود اولیه با URL تمیز → منو پیش‌فرضه، کاری نکن
+   if (!hash) {
+      return;
+   }
+
+   // اگه #main بود → منو، ولی URL رو به حالت تمیز برگردون
+   if (hash === 'main') {
+      history.replaceState({ section: null }, '', window.location.pathname);
+      return;
+   }
+
+   // اگه سکشن معتبر بود → بعد از لود preloader بازش کن
+   const targetSection = document.getElementById(hash);
+   if (targetSection) {
+      setTimeout(() => {
+         showSection(hash);
+      }, 1500);
+   }
+});
