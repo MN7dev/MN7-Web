@@ -1,5 +1,135 @@
 @charset "utf-8";
 
+/* ===== Local Fonts ===== */
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('fonts/Outfit-Thin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url('fonts/Outfit-ExtraLight.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('fonts/Outfit-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/Outfit-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/Outfit-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/Outfit-SemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/Outfit-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('fonts/Outfit-ExtraBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('fonts/Outfit-Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/Syne-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('fonts/Syne-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('fonts/Syne-SemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/Syne-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('fonts/Syne-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Vazirmatn';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url('fonts/Vazirmatn-Thin.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/Vazirmatn-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/Vazirmatn-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Vazirmatn';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('fonts/Vazirmatn-Black.woff2') format('woff2');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -255,7 +385,7 @@ body {
 }
 
 .brand-name {
-	font-family: 'enter', sans-serif;
+	font-family: var(--font-display);
 	font-size: 52px;
 	font-weight: 600;
 	letter-spacing: 6px;
@@ -528,7 +658,7 @@ body {
 }
 
 .small-brand h3 {
-	font-family: 'enter', sans-serif;
+	font-family: var(--font-display);
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
