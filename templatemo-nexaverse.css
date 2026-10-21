@@ -385,9 +385,9 @@ body {
 }
 
 .brand-name {
-	font-family: var(--font-display);
+	font-family: 'Outfit', sans-serif;
 	font-size: 52px;
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 6px;
 	margin-bottom: 10px;
 	background: linear-gradient(135deg, var(--primary) 0%, #ffffff 50%, var(--secondary) 100%);
@@ -658,7 +658,7 @@ body {
 }
 
 .small-brand h3 {
-	font-family: var(--font-display);
+	font-family: 'Outfit' , sans-serif;
 	font-size: 14px;
 	font-weight: 600;
 	letter-spacing: 2px;
